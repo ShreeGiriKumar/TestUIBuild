@@ -22,7 +22,7 @@ module.exports = function (config) {
     junitReporter: {
       outputDir: 'reports', // results will be saved as $outputDir/$browserName.xml
       outputFile: 'junit.xml', // if included, results will be saved as $outputDir/$browserName/$outputFile
-      useBrowserName: true // add browser name to report and classes names
+      useBrowserName: false // add browser name to report and classes names
     },
     coverageIstanbulReporter: {
       dir: require('path').join(__dirname, '../coverage'),
